@@ -1,6 +1,6 @@
 {
-  "name": "webpack-md5-hash",
-  "version": "0.0.6",
+  "name": "webpack-md5-hash-fix",
+  "version": "1.0.0",
   "description": "Plugin to replace a standard webpack chunkhash with md5.",
   "main": "index.js",
   "types": "index.d.ts",
@@ -19,7 +19,7 @@
     "plugin",
     "md5"
   ],
-  "author": "Kirill Ermolov",
+  "author": "mtiayan",
   "contributors": [{
     "name": "Sebastien Dubois",
     "email": "seb@dsebastien.net",
@@ -29,7 +29,7 @@
   "bugs": {
     "url": "https://github.com/erm0l0v/webpack-md5-hash/issues"
   },
-  "homepage": "https://github.com/erm0l0v/webpack-md5-hash",
+  "homepage": "https://github.com/mtiayan/webpack-md5-hash-fix",
   "dependencies": {
     "@types/webpack": "*",
     "md5": "^2.0.0"

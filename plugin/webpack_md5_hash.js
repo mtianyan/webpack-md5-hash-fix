@@ -1,7 +1,7 @@
 "use strict";
 
 var md5 = require("md5");
-
+var fs = require('fs');
 function compareModules(a,b) {
     if (a.resource < b.resource) {
         return -1;
@@ -13,8 +13,13 @@ function compareModules(a,b) {
 }
 
 function getModuleSource (module) {
-    var _source = module._source || {};
-    return _source._value || "";
+    if(module.resource){
+        var ret = fs.readFileSync(module.resource.replace("?modules",""), 'utf-8');
+    }else{
+        var _source = module._source || {};
+        var ret = _source._value || ""
+    }
+    return ret || "";
 }
 
 function concatenateSource (result, module_source) {

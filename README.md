@@ -1,5 +1,7 @@
 # webpack-md5-hash
 
+修复: 送进md5方法的source 被添加了绝对路径，导致md5不稳定。
+
 [![NPM](https://nodei.co/npm/webpack-md5-hash.png)](https://npmjs.org/package/webpack-md5-hash)
 
 Plugin to replace a standard webpack chunkhash with md5.
